@@ -1,0 +1,45 @@
+{
+  "dependencies": {
+  },
+  "name": "unattended_upgrades",
+  "maintainer_email": "marcel@oak.homeunix.org",
+  "attributes": {
+    "unattended_upgrades/upgrade_email": {
+      "required": "optional",
+      "calculated": false,
+      "choice": [
+
+      ],
+      "default": "root@localhost",
+      "type": "string",
+      "recipes": [
+
+      ],
+      "display_name": "Unattended Upgrade Email",
+      "description": "Email to receive notifications regarding APT package upgrades"
+    }
+  },
+  "license": "Apache 2.0",
+  "suggestions": {
+  },
+  "platforms": {
+    "debian": ">= 0.0.0",
+    "ubuntu": ">= 0.0.0"
+  },
+  "maintainer": "Marcel M. Cary",
+  "long_description": "= DESCRIPTION:\n\nConfigure APT to do unattended upgrades as fixes are released.\n\n= REQUIREMENTS:\n\nUbuntu or maybe Debian\n\n= ATTRIBUTES:\n\nThe following node attributes are passed to the APT configuration template:\n\n* unattended_upgrades[:upgrade_email] - email to receive notifications\n\n= USAGE:\n\n  include_recipe \"unattended_upgrades\"\n\n",
+  "version": "0.0.1",
+  "recommendations": {
+  },
+  "recipes": {
+  },
+  "groupings": {
+  },
+  "conflicting": {
+  },
+  "replacing": {
+  },
+  "description": "Installs/Configures unattended_upgrades",
+  "providing": {
+  }
+}
